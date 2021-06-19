@@ -1,0 +1,28 @@
+test:
+  product:
+    name: test
+#server port
+server:
+  port: 0
+spring:
+  #rabbit
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+#eureka
+eureka: 
+  instance:
+    instanceId: ${spring.application.name}:${random.uuid}
+  client: 
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:7020/eureka/
+#actuator
+management: 
+  endpoints: 
+    web:
+      exposure:
+        include: '*'
