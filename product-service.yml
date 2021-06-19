@@ -1,6 +1,6 @@
 test:
   product:
-    name: test
+    name: PRODUCT
 #server port
 server:
   port: 0

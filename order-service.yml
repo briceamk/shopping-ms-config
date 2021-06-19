@@ -1,6 +1,6 @@
 test:
   order:
-    name: test
+    name: ORDER
 #server port
 server:
   port: 0
