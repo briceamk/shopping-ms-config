@@ -1,0 +1,20 @@
+#server port
+server:
+  port: 7020
+#eureka
+eureka:
+  client:
+    fetchRegistry: false
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://localhost:7020/eureka/
+  server:
+    enableSelfPreservation: false
+  instance:
+    preferIpAddress: true
+#actuator
+management: 
+  endpoints: 
+    web:
+      exposure:
+        include: '*'
