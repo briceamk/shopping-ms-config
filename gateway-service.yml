@@ -31,6 +31,20 @@ spring:
         id: order-service
         uri: lb://order-service
         predicates[0]: Path=/api/orders
+  #security
+  security:
+    oauth2:
+      client:
+        provider:
+          keycloak:
+            issuerUri: http://localhost:8180/auth/realms/shopping-ms-real
+        registration:
+          springCloudGatewayClient:
+            clientId: shopping-ms-gateway-client
+            clientSecret: 745cf945-1191-438c-80b2-c6b10e9b6141
+            provider: keycloack
+            authorizationGrantType: authorisation_code
+            redirectUri: http://localhost:8080/login/oauth2/code/shopping-ms-gateway-client
 #eureka
 eureka: 
   instance:

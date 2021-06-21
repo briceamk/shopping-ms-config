@@ -11,6 +11,12 @@ spring:
     port: 5672
     username: guest
     password: guest
+  #security
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuerUri:http://localhost:8180/auth/realms/shopping-ms-real
 #eureka
 eureka: 
   instance:
