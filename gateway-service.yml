@@ -42,7 +42,7 @@ spring:
           springCloudGatewayClient:
             clientId: shopping-ms-gateway-client
             clientSecret: 745cf945-1191-438c-80b2-c6b10e9b6141
-            provider: keycloack
+            provider: keycloak
             authorizationGrantType: authorisation_code
             redirectUri: http://localhost:8080/login/oauth2/code/shopping-ms-gateway-client
 #eureka
