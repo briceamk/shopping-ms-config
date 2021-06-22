@@ -21,7 +21,7 @@ spring:
               - PATCH
             maxAge: 3600
       httpclient:
-        connectTimeout: 6000
+        connectTimeout: 10000
         responseTimeout: 10s
       routes[0]:
         id: product-service
