@@ -16,7 +16,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuerUri: http://localhost:8180/auth/realms/shopping-ms-real
+          issuerUri: http://localhost:8180/auth/realms/shopping-ms-realm
 #eureka
 eureka: 
   instance:
